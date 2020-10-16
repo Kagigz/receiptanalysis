@@ -25,7 +25,7 @@ def list_blobs(container_name, connection_string):
     blobs = []
     try:
         blob_list = container_client.list_blobs()
-        print(blob_list)
+        blobs = [blob.name for blob in blob_list]
         logging.info(f"Found {str(len(blobs))} blobs.")
     except Exception as e:
         logging.error(f"Could not list blobs: {e}")
