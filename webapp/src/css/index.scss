@@ -1,0 +1,138 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import './themes/light-theme.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $bodyFontFamily;
+  font-weight: $bodyFontWeight;
+  font-size: $bodyFontSize;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bgColor;
+  color: $textColor;
+  text-align: center;
+}
+
+.accentBox {
+  background-color: $accentColor;
+  color: $accentTextColor;
+  border-radius: $corners;
+  box-shadow: $shadow;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.title {
+  font-family: $titleFontFamily;
+  font-weight: $titleFontWeight;
+  font-size: $titleFontSize;
+  color: $contrastingColor;
+}
+
+.code {
+  font-family: $codeFontFamily;
+  font-weight: $codeFontWeight;
+  font-size: $codeFontSize;
+}
+
+.btn {
+  border: $btnBorders;
+  border-radius: $corners;
+  background-color: $btnColor;
+  color: $btnTextColor;
+  font-size: $btnFontSize;
+  font-family: $btnFontFamily;
+  font-weight: $btnFontWeight;
+  cursor: pointer;
+  a{
+    color: $btnTextColor;
+    text-decoration: none;
+  }
+}
+
+.btn:hover {
+  border: $btnBordersHover;
+  background-color: $btnColorHover;
+  color: $btnTextColorHover;
+  a{
+    color: $btnTextColorHover;
+  }
+}
+
+.input{
+  width: 80%;
+  border-radius: $corners;
+}
+
+.form-control{
+  border: $btnBorders;
+  border-radius: $corners;
+  background-color: $inputColor;
+}
+
+.form-control:focus{
+  box-shadow: $inputBoxShadow;
+  border: $btnBorders;
+}
+
+.dropzone {
+  height: 200px;
+  background-color: $inputColor;
+  border: $btnBorders;
+  font-size: $btnFontSize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzoneHighlight {
+  background-color: $highlightBlockColor;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.biggerFont{
+  font-size: 1.8em;
+}
+
+.textBlockWrapper{
+  height: 30vh;
+  text-align: start;
+}
+
+.textBlockInput{
+  position: relative;
+  height: 100%;
+  background-color: $inputColor;
+  line-height: 20px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: $bgColor;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: $shadow; 
+  box-shadow: $shadow;
+  background-color: $bgColor;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: $corners;
+  -webkit-box-shadow: $shadow; 
+  box-shadow: $shadow;
+  background-color: $contrastingColor;
+}
+
+.tab{
+  margin-right: 30px;
+}
+
